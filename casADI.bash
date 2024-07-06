@@ -1,5 +1,6 @@
-cp ./coinhsl.zip ~/softwre/ipopt
-cd ~/software/ipopt
+mkdir -p ~/software/casADI/ipopt
+cp ./coinhsl.zip ~/softwre/casADI/ipopt
+cd ~/software/casADI/ipopt
 # install ASL
 git clone https://github.com/coin-or-tools/ThirdParty-ASL.git
 cd ThirdParty-ASL
@@ -33,7 +34,7 @@ mkdir build && cd build
 sudo make
 sudo make install
 
-cd ..
+cd ../..
 #install casADI
 git clone https://github.com/casadi/casadi.git
 cd casadi
