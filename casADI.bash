@@ -2,6 +2,7 @@ mkdir -p ~/software/casADI/ipopt
 cp ./coinhsl.zip ~/software/casADI/ipopt
 cd ~/software/casADI/ipopt
 # install ASL
+sudo apt install swig
 git clone https://github.com/coin-or-tools/ThirdParty-ASL.git
 cd ThirdParty-ASL
 sudo ./get.ASL
