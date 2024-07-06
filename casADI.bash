@@ -18,6 +18,7 @@ sudo apt install libblas-dev  liblapack-dev
 #install HSL
 git clone https://github.com/coin-or-tools/ThirdParty-HSL.git
 unzip coinhsl.zip -d ./ThirdParty-HSL
+cd ThirdParty-HSL
 sudo ./configure
 make clean
 sudo make
