@@ -1,4 +1,4 @@
-First execute
-sudo chmod +x ./casADI.bash
-Then 
+First execute\\
+sudo chmod +x ./casADI.bash\\
+Then \\
 source ./casADI.bash
