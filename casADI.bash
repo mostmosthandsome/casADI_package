@@ -1,5 +1,8 @@
 mkdir -p ~/software/casADI/ipopt
 cp ./coinhsl.zip ~/software/casADI/ipopt
+cd ~/clash-for-linux
+./start.sh
+export http_proxy="localhost:7890"
 cd ~/software/casADI/ipopt
 # install ASL
 sudo apt install swig
