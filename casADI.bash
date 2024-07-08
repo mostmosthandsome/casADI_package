@@ -31,6 +31,7 @@ sudo ./get.Mumps
 sudo ./configure
 sudo make
 sudo make install
+sudo apt install libmumps-seq-dev
 cd ..
 #install ipopt
 git clone https://github.com/coin-or/Ipopt.git
