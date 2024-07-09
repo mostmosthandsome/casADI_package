@@ -14,7 +14,7 @@ sudo make
 sudo make install
 cd ..
 #install BLAS, LAPACK
-sudo apt install -y libblas-dev  liblapack-dev
+sudo apt install libblas-dev  liblapack-dev
 #install HSL
 git clone https://github.com/coin-or-tools/ThirdParty-HSL.git
 unzip coinhsl.zip -d ./ThirdParty-HSL
@@ -31,7 +31,7 @@ sudo ./get.Mumps
 sudo ./configure
 sudo make
 sudo make install
-sudo apt install -y libmumps-seq-dev
+sudo apt install libmumps-seq-dev
 cd ..
 #install ipopt
 git clone https://github.com/coin-or/Ipopt.git
