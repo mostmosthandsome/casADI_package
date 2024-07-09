@@ -43,6 +43,7 @@ sudo make install
 
 cd ../..
 #install casADI
+sudo cp -r /usr/local/include/coin-or/mumps /usr/include
 git clone https://github.com/casadi/casadi.git
 cd casadi
 mkdir build
