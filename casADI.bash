@@ -48,6 +48,7 @@ git clone https://github.com/casadi/casadi.git
 cd casadi
 mkdir build
 cd build
-cmake -DWITH_PYTHON=ON -DWITH_PYTHON3=ON ..
+export $LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+cmake -DWITH_PYTHON=ON -DWITH_PYTHON3=ON -DWITH_IPOPT=ON _DWITH_MUMPS=ON ..
 make
 sudo make install
