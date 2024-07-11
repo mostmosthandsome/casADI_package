@@ -14,7 +14,7 @@ sudo make
 sudo make install
 cd ..
 #install BLAS, LAPACK
-sudo apt install libblas-dev  liblapack-dev
+sudo apt install -y libblas-dev  liblapack-dev
 #install HSL
 git clone https://github.com/coin-or-tools/ThirdParty-HSL.git
 unzip coinhsl.zip -d ./ThirdParty-HSL
@@ -31,7 +31,7 @@ sudo ./get.Mumps
 sudo ./configure
 sudo make
 sudo make install
-sudo apt install libmumps-seq-dev
+sudo apt install -y libmumps-seq-dev
 cd ..
 #install ipopt
 git clone https://github.com/coin-or/Ipopt.git
@@ -48,6 +48,7 @@ git clone https://github.com/casadi/casadi.git
 cd casadi
 mkdir build
 cd build
-cmake -DWITH_PYTHON=ON -DWITH_PYTHON3=ON ..
+export $LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
+cmake -DWITH_PYTHON=ON -DWITH_PYTHON3=ON -DWITH_IPOPT=ON _DWITH_MUMPS=ON ..
 make
 sudo make install
